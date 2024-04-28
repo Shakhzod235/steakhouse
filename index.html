@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
@@ -25,14 +26,14 @@
             <a href="#advantages" class="text-gray-100 font-md tracking-wide transition-opacity hover:opacity-75">УСЛУГИ И УДОБСТВА</a>
           </li>
           <li>
-            <a href="#about-us" class="text-gray-100 font-md tracking-wide transition-opacity hover:opacity-75">КОНТАКТЫ</a>
+            <a href="#contacts" class="text-gray-100 font-md tracking-wide transition-opacity hover:opacity-75">КОНТАКТЫ</a>
           </li>
         </ul>
       </nav>
     </div>
   </header>
   <main>
-    <section class="hero h-screen bg-[url('https://img.goodfon.ru/original/1920x1080/c/7c/miaso-steik-gril.jpg')] bg-no-repeat bg-cover bg-fixed">
+    <section class="hero h-screen bg-[url('https://img.goodfon.ru/original/1920x1080/c/7c/miaso-steik-gril.jpg')] bg-no-repeat bg-cover bg-fixed" id="hero">
       <div class="bg-overlay absolute inset-0 bg-black opacity-50 z-5"></div>
       <div class="container flex flex-col justify-center items-center h-full mx-auto relative z-100">
         <h1 class="text-white text-4xl">Добро пожаловать в Myasnoy Steakhouse!</h1>
@@ -58,51 +59,58 @@
         </div>
       </div>
     </section>
-    <section class="advantages bg-[url('https://n1s1.hsmedia.ru/e3/10/1a/e3101a8de21749eaf90f522254b3fb7e/3000x2000_0x1sxzyLP0_9003191131011922537.jpg')] bg-cover bg-no-repeat py-[5rem]">
+    <section class="advantages bg-[url('https://img.goodfon.ru/original/1920x1080/1/20/steik-miaso-ovoshchi-ogon-gril.jpg')] bg-cover bg-no-repeat py-[5rem]" id="advantages">
       <div class="container flex flex-col gap-10 mx-auto">
-        <h2 class="text-white text-2xl font-bold ">Услуги и удобства</h2>
-        <div class="cards grid grid-cols-3 gap-x-[8.5rem] gap-y-[4rem]">
-          <div class="card w-[420px] py-4 px-6 rounded-lg bg-stone-700">
-          <h3 class="text-white leading-5">Доставка и Еда на вынос</h3>
-            <p class="text-white leading-5">Наслаждайтесь нашими блюдами у себя дома или в офисе</p>
+        <h2 class="text-white text-2xl font-bold">Услуги и удобства</h2>
+        <div class="cards grid grid-cols-3 gap-x-[5.8rem] gap-y-[4rem]">
+          <div class="card w-[450px] flex flex-col gap-y-2 py-4 px-6 rounded-lg bg-stone-700">
+          <h3 class="text-white leading-5 text-lg font-medium">Доставка и Еда на вынос</h3>
+            <p class="text-white leading-5 text-md">Наслаждайтесь нашими блюдами у себя дома или в офисе</p>
           </div>
-          <div class="card w-[420px] py-4 px-6 rounded-lg bg-stone-700">
-            <h3 class="text-white leading-5">Бронирование столов</h3>
-            <p class="text-white leading-5">Забронируйте столик заранее, чтобы гарантировать себе место в нашем ресторане</p>
+          <div class="card w-[450px] flex flex-col gap-y-2 py-4 px-6 rounded-lg bg-stone-700">
+            <h3 class="text-white leading-5 text-lg font-medium">Бронирование столов</h3>
+            <p class="text-white leading-5 text-md">Забронируйте столик заранее, чтобы гарантировать себе место в нашем ресторане</p>
           </div>
-          <div class="card w-[420px] py-4 px-6 rounded-lg bg-stone-700">
-            <h3 class="text-white leading-5">Столики на открытом воздухе</h3>
-            <p class="text-white leading-5">Предлагаем вам насладиться свежим воздухом в наших открытых зонах</p>
+          <div class="card w-[450px] flex flex-col gap-y-2 py-4 px-6 rounded-lg bg-stone-700">
+            <h3 class="text-white leading-5 text-lg font-medium">Столики на открытом воздухе</h3>
+            <p class="text-white leading-5 text-md">Предлагаем вам насладиться свежим воздухом в наших открытых зонах</p>
           </div>
-          <div class="card w-[420px] py-4 px-6 rounded-lg bg-stone-700">
-            <h3 class="text-white leading-5">Бар с алкогольными напитками</h3>
-            <p class="text-white leading-5">Обширный выбор вин, пива и коктейлей для полного удовлетворения вашего вкуса</p>
+          <div class="card w-[450px] flex flex-col gap-y-2 py-4 px-6 rounded-lg bg-stone-700">
+            <h3 class="text-white leading-5 text-lg font-medium">Бар с алкогольными напитками</h3>
+            <p class="text-white leading-5 text-md">Обширный выбор вин, пива и коктейлей для полного удовлетворения вашего вкуса</p>
           </div>
-          <div class="card w-[420px] py-4 px-6 rounded-lg bg-stone-700">
-            <h3 class="text-white leading-5">Принимаются кредитные карты и электронные платежи</h3>
-            <p class="text-white leading-5">Оплатите ваш счет удобным для вас способом</p>
+          <div class="card w-[450px] flex flex-col gap-y-2 py-4 px-6 rounded-lg bg-stone-700">
+            <h3 class="text-white leading-5 text-lg font-medium">Принимаются кредитные карты и электронные платежи</h3>
+            <p class="text-white leading-5 text-md">Оплатите ваш счет удобным для вас способом</p>
           </div>
-          <div class="card w-[420px] py-4 px-6 rounded-lg bg-stone-700">
-            <h3 class="text-white leading-5">Обслуживание за столиками</h3>
-            <p class="text-white leading-5">Наша дружелюбная команда официантов всегда готова к вашим запросам</p>
+          <div class="card w-[450px] flex flex-col gap-y-2 py-4 px-6 rounded-lg bg-stone-700">
+            <h3 class="text-white leading-5 text-lg font-medium">Обслуживание за столиками</h3>
+            <p class="text-white leading-5 text-md">Наша дружелюбная команда официантов всегда готова к вашим запросам</p>
           </div>
-          <div class="card w-[420px] py-4 px-6 rounded-lg bg-stone-700">
-            <h3 class="text-white leading-5">Парковка на улице</h3>
-            <p class="text-white leading-5">Удобная парковка рядом с нашим рестораном для вашего комфорта</p>
+          <div class="card w-[450px] flex flex-col gap-y-2 py-4 px-6 rounded-lg bg-stone-700">
+            <h3 class="text-white leading-5 text-lg font-medium">Парковка на улице</h3>
+            <p class="text-white leading-5 text-md">Удобная парковка рядом с нашим рестораном для вашего комфорта</p>
           </div>
-          <div class="card w-[420px] py-4 px-6 rounded-lg bg-stone-700">
-            <h3 class="text-white leading-5">Вино и пиво</h3>
-            <p class="text-white leading-5">Разнообразие алкогольных напитков для полного наслаждения вашего ужина</p>
+          <div class="card w-[450px] flex flex-col gap-y-2 py-4 px-6 rounded-lg bg-stone-700">
+            <h3 class="text-white leading-5 text-lg font-medium">Вино и пиво</h3>
+            <p class="text-white leading-5 text-md">Разнообразие алкогольных напитков для полного наслаждения вашего ужина</p>
           </div>
-          <div class="card w-[420px] py-4 px-6 rounded-lg bg-stone-700">
-            <h3 class="text-white leading-5">Для гостей на автомобилях и с собаками</h3>
-            <p class="text-white leading-5">Мы рады приветствовать вас и вашего четвероногого друга или предоставить удобную парковку для вашего автомобиля</p>
+          <div class="card w-[450px] flex flex-col gap-y-2 py-4 px-6 rounded-lg bg-stone-700">
+            <h3 class="text-white leading-5 text-lg font-medium">Для гостей на автомобилях и с собаками</h3>
+            <p class="text-white leading-5 text-md">Мы рады приветствовать вас и вашего четвероногого друга или предоставить удобную парковку для вашего автомобиля</p>
           </div>
-          <div class="card w-[420px] py-4 px-6 rounded-lg bg-stone-700">
-            <h3 class="text-white leading-5">Семейный</h3>
-            <p class="text-white leading-5">Дружественная атмосфера и меню для всей семьи, включая маленьких гурманов</p>
+          <div class="card w-[450px] flex flex-col gap-y-2 py-4 px-6 rounded-lg bg-stone-700">
+            <h3 class="text-white leading-5 text-lg font-medium">Семейный</h3>
+            <p class="text-white leading-5 text-md">Дружественная атмосфера и меню для всей семьи, включая маленьких гурманов</p>
           </div>
         </div>
+      </div>
+    </section>
+    <section class="contacts py-[5rem] bg-neutral-700" id="contacts">
+      <div class="container mx-auto">
+        <p class="text-white text-xl text-center">Присоединяйтесь к нам в Myasnoy Steakhouse и окунитесь в мир удовольствия и вкуса! Ждем вас с нетерпением!</p>
+        <p class="text-white text-xl text-center">+998 78 148-10-01 +998 93 841-77-37 
+          Шота Руставели, 13А. Мясной Steak House</p>
       </div>
     </section>
   </main>
@@ -112,7 +120,9 @@
         <p class="text-gray-100 text-md font-sans font-medium tracking-[0.19em] leading-5">МЯС&#128293;НОЙ</p>
         <p class="text-gray-100 text-md font-sans font-medium tracking-[0.05em] leading-5">STEAKHOUSE</p>
       </div>
-      <p>Шота Руставели, 13А | +998 78 148-10-01 | +998 93 841-77-37 </p>
+      <a href="#hero"><span class="material-symbols-outlined text-2xl rounded-full text-gray-100 border-2 px-1">
+        expand_less
+        </span></a>
     </div>
   </footer>
 </body>
