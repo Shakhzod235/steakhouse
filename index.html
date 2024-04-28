@@ -11,21 +11,34 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-  <header class="p-5 bg-neutral-900">
+  <header class="p-5 bg-neutral-900 fixed w-full z-10">
     <div class="container flex justify-between items-center mx-auto">
       <div class="logo">
         <a href="#">
-          <p class="text-gray-100 text-md font-sans font-medium tracking-[0.19em]">МЯС&#128293;НОЙ</p>
-          <p class="text-gray-100 text-md font-sans font-medium tracking-[0.05em]">STEAKHOUSE</p>
+          <p class="text-gray-100 text-md font-sans font-medium tracking-[0.19em] leading-5">МЯС&#128293;НОЙ</p>
+          <p class="text-gray-100 text-md font-sans font-medium tracking-[0.05em] leading-5">STEAKHOUSE</p>
         </a>
       </div>
       <nav class="navbar">
         <ul class="flex justify-between items-center gap-5">
-          <li><a href="#advantages" class="text-gray-100 font-md">УСЛУГИ И УДОБСТВА</a></li>
-          <li><a href="#about-us" class="text-gray-100 font-md">КОНТАКТЫ</a></li>
+          <li>
+            <a href="#advantages" class="text-gray-100 font-md tracking-wide transition-opacity hover:opacity-75">УСЛУГИ И УДОБСТВА</a>
+          </li>
+          <li>
+            <a href="#about-us" class="text-gray-100 font-md tracking-wide transition-opacity hover:opacity-75">КОНТАКТЫ</a>
+          </li>
         </ul>
       </nav>
     </div>
   </header>
+  <main>
+    <section class="hero h-screen bg-[url('https://img.goodfon.ru/original/1920x1080/c/7c/miaso-steik-gril.jpg')] bg-no-repeat bg-cover">
+      <div class="bg-overlay absolute inset-0 bg-black opacity-50 z-5"></div>
+      <div class="container flex flex-col justify-center items-center h-full mx-auto relative z-100">
+        <h1 class="text-white text-4xl">Добро пожаловать в Myasnoy Steakhouse!</h1>
+        <h2 class="text-white text-xl">Откройте для себя истинное удовольствие от великолепных стейков и непревзойденной атмосферы в самом сердце Ташкента!</h2>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
