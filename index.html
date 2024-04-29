@@ -12,21 +12,21 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-  <header class="p-5 bg-neutral-900 fixed w-full z-10">
-    <div class="container flex justify-between items-center mx-auto">
+  <header class="py-5 bg-neutral-900 fixed w-full z-10">
+    <div class="container flex justify-between items-center mx-auto px-4">
       <div class="logo">
         <a href="#">
-          <p class="text-gray-100 text-md font-sans font-medium tracking-[0.19em] leading-5">МЯС&#128293;НОЙ</p>
-          <p class="text-gray-100 text-md font-sans font-medium tracking-[0.05em] leading-5">STEAKHOUSE</p>
+          <p class="text-gray-100 text-xs sm:text-md xl:text-lg font-sans font-medium tracking-[0.19em] leading-4 xl:leading-5">МЯС&#128293;НОЙ</p>
+          <p class="text-gray-100 text-xs sm:text-md xl:text-lg font-sans font-medium tracking-[0.05em] leading-4 xl:leading-5">STEAKHOUSE</p>
         </a>
       </div>
       <nav class="navbar">
-        <ul class="flex justify-between items-center gap-5">
+        <ul class="flex justify-between items-center gap-2 sm:gap-5">
           <li>
-            <a href="#advantages" class="text-gray-100 font-md tracking-wide transition-opacity hover:opacity-75">УСЛУГИ И УДОБСТВА</a>
+            <a href="#advantages" class="text-gray-100 text-xs sm:text-sm md:text-md xl:text-lg tracking-wide transition-opacity hover:opacity-75">Услуги и удобства</a>
           </li>
           <li>
-            <a href="#contacts" class="text-gray-100 font-md tracking-wide transition-opacity hover:opacity-75">КОНТАКТЫ</a>
+            <a href="#contacts" class="text-gray-100 text-xs sm:text-sm md:text-md xl:text-lg tracking-wide transition-opacity hover:opacity-75">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -36,23 +36,23 @@
     <section class="hero h-screen bg-[url('https://img.goodfon.ru/original/1920x1080/c/7c/miaso-steik-gril.jpg')] bg-no-repeat bg-cover bg-fixed" id="hero">
       <div class="bg-overlay absolute inset-0 bg-black opacity-50 z-5"></div>
       <div class="container flex flex-col justify-center items-center h-full mx-auto relative z-100">
-        <h1 class="text-white text-4xl">Добро пожаловать в Myasnoy Steakhouse!</h1>
-        <h2 class="text-white text-xl">Откройте для себя истинное удовольствие от великолепных стейков и непревзойденной атмосферы в самом сердце Ташкента!</h2>
+        <h1 class="text-white text-lg sm:text-xl md:text-2xl xl:text-4xl text-center">Добро пожаловать в Myasnoy Steakhouse!</h1>
+        <h2 class="text-white text-sm sm:text-md md:text-lg w-[85%] xl:text-xl text-center">Откройте для себя истинное удовольствие от великолепных стейков и непревзойденной атмосферы в самом сердце Ташкента!</h2>
       </div>
     </section>
-    <section class="about bg-neutral-700">
-      <div class="container mx-auto">
-        <div class="thumbnail flex justify-center items-center gap-20">
-          <img src="https://i.ibb.co/Fwmx53Z/image.png" alt="image" width="500px">
-          <div class="thumbnail-text w-[415px]">
-            <p class="text-gray-200 text-lg text-justify">
+    <section class="about bg-neutral-700 bg-[url('https://media-cdn.tripadvisor.com/media/photo-s/1c/d8/9f/81/caption.jpg')] py-6 sm:p-0 bg-cover bg-no-repeat sm:bg-none">
+      <div class="container mx-auto px-4">
+        <div class="thumbnail flex justify-center items-center gap-5 md:gap-10 xl:gap-20">
+          <img src="https://i.ibb.co/Fwmx53Z/image.png" alt="image" class="max-w-[500px] w-[40%] lg:w-[34%] hidden sm:block">
+          <div class="thumbnail-text max-w-[25rem] sm:max-w-[16rem] lg:max-w-[26rem]">
+            <p class="text-white sm:text-gray-200 text-xs sm:text-md lg:text-lg text-justify">
               Погрузитесь в мир роскоши и уюта в нашем элегантном ресторане, где каждая деталь создана для вашего комфорта и удовольствия.
             </p>
-            <p class="text-gray-200 text-lg text-justify">
+            <p class="text-white sm:text-gray-200 text-xs sm:text-md lg:text-lg text-justify">
               Насладитесь широким выбором стейков из отборного мяса, приготовленных нашими талантливыми шеф-поварами с любовью и мастерством. 
               Выберите идеальную комбинацию из нашего разнообразного меню соусов и гарниров, чтобы сделать ваш ужин по-настоящему незабываемым.
             </p>
-            <p class="text-gray-200 text-lg text-justify">
+            <p class="text-white sm:text-gray-200 text-xs sm:text-md lg:text-lg text-justify">
               Наши высокие стандарты качества гарантируют, что каждое блюдо, поданное в Myasnoy Steakhouse, будет радовать вас и ваших близких самыми изысканными вкусами и ароматами.
             </p>
           </div>
@@ -60,67 +60,67 @@
       </div>
     </section>
     <section class="advantages bg-[url('https://img.goodfon.ru/original/1920x1080/1/20/steik-miaso-ovoshchi-ogon-gril.jpg')] bg-cover bg-no-repeat py-[5rem]" id="advantages">
-      <div class="container flex flex-col gap-10 mx-auto">
+      <div class="container flex flex-col gap-10 mx-auto px-4">
         <h2 class="text-white text-2xl font-bold">Услуги и удобства</h2>
-        <div class="cards grid grid-cols-3 gap-x-[5.8rem] gap-y-[4rem]">
-          <div class="card w-[450px] flex flex-col gap-y-2 py-4 px-6 rounded-lg bg-stone-700">
-          <h3 class="text-white leading-5 text-lg font-medium">Доставка и Еда на вынос</h3>
-            <p class="text-white leading-5 text-md">Наслаждайтесь нашими блюдами у себя дома или в офисе</p>
+        <div class="cards flex justify-between flex-wrap sm:gap-x-[5%] gap-y-[1.5rem] lg:gap-y-[3rem]">
+          <div class="card flex flex-col w-[45%] sm:w-[30%] gap-y-2 p-3 sm:py-4 sm:px-6 rounded-lg bg-stone-700">
+          <h3 class="text-white leading-5 text-md sm:text-lg font-medium">Доставка и Еда на вынос</h3>
+            <p class="text-white leading-5 text-sm sm:text-md">Наслаждайтесь нашими блюдами у себя дома или в офисе</p>
           </div>
-          <div class="card w-[450px] flex flex-col gap-y-2 py-4 px-6 rounded-lg bg-stone-700">
-            <h3 class="text-white leading-5 text-lg font-medium">Бронирование столов</h3>
-            <p class="text-white leading-5 text-md">Забронируйте столик заранее, чтобы гарантировать себе место в нашем ресторане</p>
+          <div class="card flex flex-col w-[45%] sm:w-[30%] gap-y-2 p-3 sm:py-4 sm:px-6 rounded-lg bg-stone-700">
+            <h3 class="text-white leading-5 text-md sm:text-lg font-medium">Бронирование столов</h3>
+            <p class="text-white leading-5 text-sm sm:text-md">Забронируйте столик заранее, чтобы гарантировать себе место в нашем ресторане</p>
           </div>
-          <div class="card w-[450px] flex flex-col gap-y-2 py-4 px-6 rounded-lg bg-stone-700">
-            <h3 class="text-white leading-5 text-lg font-medium">Столики на открытом воздухе</h3>
-            <p class="text-white leading-5 text-md">Предлагаем вам насладиться свежим воздухом в наших открытых зонах</p>
+          <div class="card flex flex-col w-[45%] sm:w-[30%] gap-y-2 p-3 sm:py-4 sm:px-6 rounded-lg bg-stone-700">
+            <h3 class="text-white leading-5 text-md sm:text-lg font-medium">Столики на открытом воздухе</h3>
+            <p class="text-white leading-5 text-sm sm:text-md">Предлагаем вам насладиться свежим воздухом в наших открытых зонах</p>
           </div>
-          <div class="card w-[450px] flex flex-col gap-y-2 py-4 px-6 rounded-lg bg-stone-700">
-            <h3 class="text-white leading-5 text-lg font-medium">Бар с алкогольными напитками</h3>
-            <p class="text-white leading-5 text-md">Обширный выбор вин, пива и коктейлей для полного удовлетворения вашего вкуса</p>
+          <div class="card flex flex-col w-[45%] sm:w-[30%] gap-y-2 p-3 sm:py-4 sm:px-6 rounded-lg bg-stone-700">
+            <h3 class="text-white leading-5 text-md sm:text-lg font-medium">Бар с алкогольными напитками</h3>
+            <p class="text-white leading-5 text-sm sm:text-md">Обширный выбор вин, пива и коктейлей для полного удовлетворения вашего вкуса</p>
           </div>
-          <div class="card w-[450px] flex flex-col gap-y-2 py-4 px-6 rounded-lg bg-stone-700">
-            <h3 class="text-white leading-5 text-lg font-medium">Принимаются кредитные карты и электронные платежи</h3>
-            <p class="text-white leading-5 text-md">Оплатите ваш счет удобным для вас способом</p>
+          <div class="card flex flex-col w-[45%] sm:w-[30%] gap-y-2 p-3 sm:py-4 sm:px-6 rounded-lg bg-stone-700">
+            <h3 class="text-white leading-5 text-md sm:text-lg font-medium">Принимаются кредитные карты и электронные платежи</h3>
+            <p class="text-white leading-5 text-sm sm:text-md">Оплатите ваш счет удобным для вас способом</p>
           </div>
-          <div class="card w-[450px] flex flex-col gap-y-2 py-4 px-6 rounded-lg bg-stone-700">
-            <h3 class="text-white leading-5 text-lg font-medium">Обслуживание за столиками</h3>
-            <p class="text-white leading-5 text-md">Наша дружелюбная команда официантов всегда готова к вашим запросам</p>
+          <div class="card flex flex-col w-[45%] sm:w-[30%] gap-y-2 p-3 sm:py-4 sm:px-6 rounded-lg bg-stone-700">
+            <h3 class="text-white leading-5 text-md sm:text-lg font-medium">Обслуживание за столиками</h3>
+            <p class="text-white leading-5 text-sm sm:text-md">Наша дружелюбная команда официантов всегда готова к вашим запросам</p>
           </div>
-          <div class="card w-[450px] flex flex-col gap-y-2 py-4 px-6 rounded-lg bg-stone-700">
-            <h3 class="text-white leading-5 text-lg font-medium">Парковка на улице</h3>
-            <p class="text-white leading-5 text-md">Удобная парковка рядом с нашим рестораном для вашего комфорта</p>
+          <div class="card flex flex-col w-[45%] sm:w-[30%] gap-y-2 p-3 sm:py-4 sm:px-6 rounded-lg bg-stone-700">
+            <h3 class="text-white leading-5 text-md sm:text-lg font-medium">Парковка на улице</h3>
+            <p class="text-white leading-5 text-sm sm:text-md">Удобная парковка рядом с нашим рестораном для вашего комфорта</p>
           </div>
-          <div class="card w-[450px] flex flex-col gap-y-2 py-4 px-6 rounded-lg bg-stone-700">
-            <h3 class="text-white leading-5 text-lg font-medium">Вино и пиво</h3>
-            <p class="text-white leading-5 text-md">Разнообразие алкогольных напитков для полного наслаждения вашего ужина</p>
+          <div class="card flex flex-col w-[45%] sm:w-[30%] gap-y-2 p-3 sm:py-4 sm:px-6 rounded-lg bg-stone-700">
+            <h3 class="text-white leading-5 text-md sm:text-lg font-medium">Вино и пиво</h3>
+            <p class="text-white leading-5 text-sm sm:text-md">Разнообразие алкогольных напитков для полного наслаждения вашего ужина</p>
           </div>
-          <div class="card w-[450px] flex flex-col gap-y-2 py-4 px-6 rounded-lg bg-stone-700">
-            <h3 class="text-white leading-5 text-lg font-medium">Для гостей на автомобилях и с собаками</h3>
-            <p class="text-white leading-5 text-md">Мы рады приветствовать вас и вашего четвероногого друга или предоставить удобную парковку для вашего автомобиля</p>
+          <div class="card flex flex-col w-[45%] sm:w-[30%] gap-y-2 p-3 sm:py-4 sm:px-6 rounded-lg bg-stone-700">
+            <h3 class="text-white leading-5 text-md sm:text-lg font-medium">Для гостей на автомобилях и с собаками</h3>
+            <p class="text-white leading-5 text-sm sm:text-md">Мы рады приветствовать вас и вашего четвероногого друга или предоставить удобную парковку для вашего автомобиля</p>
           </div>
-          <div class="card w-[450px] flex flex-col gap-y-2 py-4 px-6 rounded-lg bg-stone-700">
-            <h3 class="text-white leading-5 text-lg font-medium">Семейный</h3>
-            <p class="text-white leading-5 text-md">Дружественная атмосфера и меню для всей семьи, включая маленьких гурманов</p>
+          <div class="card flex flex-col w-[45%] sm:w-[30%] gap-y-2 p-3 sm:py-4 sm:px-6 rounded-lg bg-stone-700">
+            <h3 class="text-white leading-5 text-md sm:text-lg font-medium">Семейный</h3>
+            <p class="text-white leading-5 text-sm sm:text-md">Дружественная атмосфера и меню для всей семьи, включая маленьких гурманов</p>
           </div>
         </div>
       </div>
     </section>
-    <section class="contacts py-[5rem] bg-neutral-700" id="contacts">
-      <div class="container mx-auto">
-        <p class="text-white text-xl text-center">Присоединяйтесь к нам в Myasnoy Steakhouse и окунитесь в мир удовольствия и вкуса! Ждем вас с нетерпением!</p>
-        <p class="text-white text-xl text-center">+998 78 148-10-01 +998 93 841-77-37 
+    <section class="contacts py-[1rem] sm:py-[2rem] xl:py-[5rem] bg-neutral-700" id="contacts">
+      <div class="container mx-auto px-4">
+        <p class="text-white text-xs sm:text-sm md:text-md xl:text-xl text-center">Присоединяйтесь к нам в Myasnoy Steakhouse и окунитесь в мир удовольствия и вкуса! Ждем вас с нетерпением!</p>
+        <p class="text-white text-xs sm:text-sm md:text-md xl:text-xl text-center">+998 78 148-10-01 +998 93 841-77-37 
           Шота Руставели, 13А. Мясной Steak House</p>
       </div>
     </section>
   </main>
-  <footer class="flex items-center justify-between p-4 bg-neutral-900 text-white">
-    <div class="container flex justify-between items-center m-auto">
+  <footer class="flex items-center justify-between py-4 bg-neutral-900 text-white">
+    <div class="container flex justify-between items-center m-auto px-4">
       <div class="logo">
-        <p class="text-gray-100 text-md font-sans font-medium tracking-[0.19em] leading-5">МЯС&#128293;НОЙ</p>
-        <p class="text-gray-100 text-md font-sans font-medium tracking-[0.05em] leading-5">STEAKHOUSE</p>
+        <p class="text-gray-100 text-xs sm:text-md xl:text-lg font-sans font-medium tracking-[0.19em] leading-4 xl:leading-5">МЯС&#128293;НОЙ</p>
+        <p class="text-gray-100 text-xs sm:text-md xl:text-lg font-sans font-medium tracking-[0.05em] leading-4 xl:leading-5">STEAKHOUSE</p>
       </div>
-      <a href="#hero"><span class="material-symbols-outlined text-2xl rounded-full text-gray-100 border-2 px-1">
+      <a href="#hero"><span class="material-symbols-outlined text-md sm:text-lg lg:text-2xl rounded-full text-gray-100 border-2 px-0 sm:px-1">
         expand_less
         </span></a>
     </div>
